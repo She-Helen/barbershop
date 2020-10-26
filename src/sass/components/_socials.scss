@@ -1,0 +1,33 @@
+.socials {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 100%;
+}
+
+.socials__link {
+	display: inline-flex;
+	justify-content: center;
+
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	color: $primary-title-color-dk;
+
+	transition: $transition;
+
+	&:hover,
+	&:focus {
+		color: $accent-color;
+	}
+	
+	.socials__icon {
+		fill: currentColor;
+	}
+}
+
+
+.socials__item:not(:last-child) {
+	margin-right: 10px;
+}
